@@ -86,38 +86,38 @@ const Education = () => {
   const getColor = (type) => {
     switch (type) {
       case "education":
-        return "border-blue-500 dark:border-blue-600";
+        return "border-blue-600";
       case "work":
-        return "border-green-500 dark:border-green-600";
+        return "border-green-600";
       case "certification":
-        return "border-yellow-400 dark:border-yellow-500";
+        return "border-yellow-500";
       default:
-        return "border-blue-500 dark:border-blue-600";
+        return "border-blue-600";
     }
   };
 
   const getIconColor = (type) => {
     switch (type) {
       case "education":
-        return "bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400";
+        return "bg-blue-900/40 text-blue-400";
       case "work":
-        return "bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400";
+        return "bg-green-900/40 text-green-400";
       case "certification":
-        return "bg-yellow-100 dark:bg-yellow-900/40 text-yellow-500 dark:text-yellow-400";
+        return "bg-yellow-900/40 text-yellow-400";
       default:
-        return "bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400";
+        return "bg-blue-900/40 text-blue-400";
     }
   };
 
   return (
-    <section id="education" className="py-14 bg-gray-50 dark:bg-gray-900">
+    <section id="education" className="py-14 bg-gray-900">
       <div className="container mx-auto px-4">
         <h1 className="text-center text-white font-bold text-4xl">
           Education Experience & Certifications
         </h1>
 
         <div className="flex justify-center mt-8 mb-8">
-          <div className="inline-flex rounded-full bg-green-100 dark:bg-green-900 p-1">
+          <div className="inline-flex rounded-full bg-green-900 p-1">
             <button className="px-4 py-2 rounded-full bg-green-600 text-white font-medium hover:bg-green-700 transition">
               Timeline
             </button>
@@ -131,7 +131,7 @@ const Education = () => {
           animate={inView ? "visible" : "hidden"}
           className="relative mt-12"
         >
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-green-300 dark:bg-green-700 rounded-full"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-green-700 rounded-full"></div>
 
           <div className="relative">
             {timelineItems.map((item, index) => (
@@ -145,7 +145,7 @@ const Education = () => {
                 } relative ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}
               >
                 <div
-                  className={`w-full md:w-[calc(50%-2rem)] bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 ${getColor(
+                  className={`w-full md:w-[calc(50%-2rem)] bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 ${getColor(
                     item.type
                   )}`}
                 >
@@ -158,24 +158,22 @@ const Education = () => {
                       {getIcon(item.type)}
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                      <h3 className="text-lg font-semibold text-white mb-1">
                         {item.title}
                       </h3>
-                      <p className="text-gray-700 dark:text-gray-300 font-medium mb-2">
+                      <p className="text-gray-300 font-medium mb-2">
                         {item.organization}
                       </p>
-                      <span className="inline-block text-sm bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full mb-3">
+                      <span className="inline-block text-sm bg-gray-700 text-gray-300 px-3 py-1 rounded-full mb-3">
                         {item.duration}
                       </span>
-                      <p className="text-gray-600 dark:text-gray-400">
-                        {item.description}
-                      </p>
+                      <p className="text-gray-400">{item.description}</p>
                     </div>
                   </div>
                 </div>
 
                 <div
-                  className={`hidden md:block absolute z-10 w-5 h-5 rounded-full bg-white dark:bg-gray-800 border-4 ${getColor(
+                  className={`hidden md:block absolute z-10 w-5 h-5 rounded-full bg-gray-800 border-4 ${getColor(
                     item.type
                   )} left-1/2 transform -translate-x-1/2`}
                 ></div>
