@@ -1,53 +1,41 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
-const Navbar = () => {
-  const [menu, openMenu] = useState(false);
-  const [showMenu, setShowmenu] = useState(true);
-  return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-      <span className="text-xl font-bold tracking-wide">Portfolio</span>
 
-      <ul
-        className={`${
-          menu ? "block" : "hidden"
-        }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <nav className="relative top-0 left-0 w-full z-50 bg-slate-700 backdrop-blur-md shadow-md">
+      <div className="flex justify-between items-center px-6 md:px-16 py-4 text-white">
+        <span className="text-2xl font-bold tracking-wide">Portfolio</span>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-10 font-medium text-lg">
+          <li className="hover:text-yellow-400 transition"><a href="#About">About</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="#Experience">Experience</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="#Projects">Projects</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="#Footer">Contact</a></li>
+        </ul>
+
+        {/* Mobile Icon */}
+        <div className="md:hidden z-50" onClick={toggleMenu}>
+          {menuOpen ? <RiCloseLine size={30} /> : <RiMenu2Line size={30} />}
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-black bg-opacity-95 text-white absolute top-16 left-0 w-full px-8 py-6 space-y-6 transition-all duration-300 ${
+          menuOpen ? "block" : "hidden"
+        }`}
       >
-        <a href="#About">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            About
-          </li>
-        </a>
-        <a href="#Experience">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Experience
-          </li>
-        </a>
-        <a href="#Projects">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Projects
-          </li>
-        </a>
-        <a href="#Footer">
-          <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Contact
-          </li>
-        </a>
-      </ul>
-      {showMenu ? (
-        <RiMenu2Line
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-          onClick={() => {
-            openMenu(!menu);
-            setShowmenu(!showMenu);
-          }}
-        />
-      ) : (
-        <RiCloseLine
-          size={30}
-          className="md:hidden absolute right-10 top-6 transition-all duration-300"
-        />
-      )}
+        <a href="#About" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">About</a>
+        <a href="#Experience" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Experience</a>
+        <a href="#Projects" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Projects</a>
+        <a href="#Footer" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Contact</a>
+      </div>
     </nav>
   );
 };
