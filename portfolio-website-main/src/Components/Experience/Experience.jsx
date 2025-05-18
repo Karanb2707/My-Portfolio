@@ -15,7 +15,7 @@ const Education = () => {
       organization: "Fyntune Solution Limited, Thurbhe",
       duration: "May 2024 - Present",
       description:
-        "Working as a Software Engineer, contributing to various projects and applying full-stack development skills.",
+        "Working as a Software Engineer with a focus on building responsive and scalable UIs in React, supported by Laravel-based APIs. Also handle complex MySQL queries for data management and performance optimization.",
     },
     {
       type: "education",
@@ -23,7 +23,7 @@ const Education = () => {
       organization: "Mulund College of Commerce, Mulund",
       duration: "2021 - 2024",
       description:
-        "Completed BSc IT with an outstanding CGPA of 9.83, demonstrating strong academic performance and technical aptitude. Gained hands-on experience in software development, data structures, web technologies, and database management. Led multiple academic projects and participated in tech fests, hackathons, and coding competitions to sharpen practical skills.",
+        "Graduated with a CGPA of 9.83, gaining strong foundations in software development, data structures, and web technologies. Led academic projects and participated in tech events and coding competitions to enhance practical skills.",
     },
     {
       type: "education",
@@ -31,7 +31,7 @@ const Education = () => {
       organization: "Ramniranjan Jhunjhunwala College, Ghatkopar",
       duration: "2019 - 2021",
       description:
-        "Completed HSC in Commerce with a focus on subjects such as economics, accountancy, business studies, and mathematics. Developed a strong grasp of logical reasoning, financial principles, and structured problem-solving. Actively participated in inter-college commerce fests, debates, and academic seminars, which helped build communication and organizational skills. This phase also marked the beginning of a growing interest in technology, leading to a shift towards the IT field for further education.",
+        "Completed HSC with a strong academic focus and active participation in college events, building a foundation for future growth in the tech field.",
     },
     {
       type: "certification",
@@ -44,7 +44,7 @@ const Education = () => {
     {
       type: "certification",
       title: "Full Stack Development",
-      organization: "MCC College",
+      organization: "MCC College (Mumbai ",
       duration: "Completed Dec 2023",
       description:
         "Completed full stack development training covering both frontend and backend technologies such as HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React, preparing for real-world web application development.",
@@ -146,9 +146,8 @@ const Education = () => {
                 } relative ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}
               >
                 <div
-                  className={`w-full md:w-[calc(50%-2rem)] bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 ${getColor(
-                    item.type
-                  )}`}
+                  className={`w-full md:w-[calc(50%-2rem)] bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] 
+                    transition-transform duration-300 cursor-pointer border-l-4 ${getColor(item.type)}`}
                 >
                   <div className="flex items-start gap-4">
                     <div
