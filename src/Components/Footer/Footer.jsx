@@ -6,6 +6,7 @@ import {
   AiOutlineUser,
   AiOutlineProject,
   AiOutlineMail,
+  AiOutlineBook
 } from "react-icons/ai";
 
 const Footer = () => {
@@ -72,6 +73,13 @@ const Footer = () => {
             >
               <AiOutlineUser size={18} />
               About
+            </a>
+            <a
+              href="#Skills"
+              className="flex items-center gap-2 hover:text-white transition"
+            >
+              <AiOutlineBook size={18} />
+              Skills
             </a>
             <a
               href="#Experience"

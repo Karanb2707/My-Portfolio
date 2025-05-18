@@ -11,7 +11,7 @@ const Projects = () => {
         <ProjectCard
           title="Chat Application"
           desc="A real-time messaging app with private/group chats, emoji and media support, built using WebSockets and a modern React interface."
-          github="https://github.com/yourusername/chat-application"
+          github="https://github.com/Karanb2707/Chat-App-MERN"
           image={ChatAppImage}
         />
         <ProjectCard

@@ -17,6 +17,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 font-medium text-lg">
           <li className="hover:text-yellow-400 transition"><a href="#About">About</a></li>
+          <li className="hover:text-yellow-400 transition"><a href="#Skills">Skills</a></li>
           <li className="hover:text-yellow-400 transition"><a href="#Experience">Experience</a></li>
           <li className="hover:text-yellow-400 transition"><a href="#Projects">Projects</a></li>
           <li className="hover:text-yellow-400 transition"><a href="#Footer">Contact</a></li>
@@ -35,6 +36,7 @@ const Navbar = () => {
         }`}
       >
         <a href="#About" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">About</a>
+        <a href="#About" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Skills</a>
         <a href="#Experience" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Experience</a>
         <a href="#Projects" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Projects</a>
         <a href="#Footer" onClick={toggleMenu} className="block text-lg hover:text-yellow-400">Contact</a>
