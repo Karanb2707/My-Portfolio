@@ -19,36 +19,36 @@ const Education = () => {
     },
     {
       type: "education",
-      title: "Bachelor of Science in Information Technology",
-      organization: "SIES College of Commerce and Economics, Sion",
+      title: "Bachelor of Science in Computer Science",
+      organization: "Mulund College of Commerce, Mulund",
       duration: "2021 - 2024",
       description:
-        "Completed BSc IT with an outstanding CGPA of 9.53, demonstrating strong academic performance and technical aptitude.",
+        "Completed BSc IT with an outstanding CGPA of 9.83, demonstrating strong academic performance and technical aptitude. Gained hands-on experience in software development, data structures, web technologies, and database management. Led multiple academic projects and participated in tech fests, hackathons, and coding competitions to sharpen practical skills.",
     },
     {
       type: "education",
       title: "Higher Secondary Certificate (HSC)",
-      organization: "Swami Vivekananda Junior College, Chembur",
+      organization: "Ramniranjan Jhunjhunwala College, Ghatkopar",
       duration: "2019 - 2021",
       description:
-        "Completed HSC in Commerce with an excellent score of 90.33%, laying a strong foundation for further studies.",
+        "Completed HSC in Commerce with a focus on subjects such as economics, accountancy, business studies, and mathematics. Developed a strong grasp of logical reasoning, financial principles, and structured problem-solving. Actively participated in inter-college commerce fests, debates, and academic seminars, which helped build communication and organizational skills. This phase also marked the beginning of a growing interest in technology, leading to a shift towards the IT field for further education.",
     },
     {
       type: "certification",
-      title: "Fullstack Web Development Bootcamp",
-      organization: "Udemy",
+      title: "Front End Development",
+      organization: "MCC College",
       duration: "Completed Apr 2024",
       description:
-        "Comprehensive training in full-stack web development, covering modern technologies and best practices.",
+        "Completed hands-on training in frontend technologies like HTML5, CSS3, JavaScript, and React, with a strong focus on building responsive, user-friendly interfaces following industry-standard UI/UX principles.",
     },
     {
       type: "certification",
-      title: "Web Development Fundamentals",
-      organization: "IBM",
-      duration: "Completed May 2023",
+      title: "Full Stack Development",
+      organization: "MCC College",
+      duration: "Completed Dec 2023",
       description:
-        "Mastered core web development concepts and practices through IBM's professional certification program.",
-    },
+        "Completed full stack development training covering both frontend and backend technologies such as HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React, preparing for real-world web application development.",
+    }
   ];
 
   const containerVariants = {
