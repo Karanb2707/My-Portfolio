@@ -9,7 +9,10 @@ const Navbar = () => {
   return (
     <nav className="relative top-0 left-0 w-full z-50 bg-slate-700 backdrop-blur-md shadow-md">
       <div className="flex justify-between items-center px-6 md:px-16 py-4 text-white">
-        <span className="text-2xl font-bold tracking-wide">Portfolio</span>
+        <span className="font-bold tracking-wide">
+          <span className="text-4xl text-yellow-500">KB</span>{' '}
+          <span className="text-2xl">Portfolio</span>
+        </span>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 font-medium text-lg">

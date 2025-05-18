@@ -116,12 +116,13 @@ const Education = () => {
           Education Experience & Certifications
         </h1>
 
-        <div className="flex justify-center mt-8 mb-8">
-          <div className="inline-flex rounded-full bg-green-900 p-1">
-            <button className="px-4 py-2 rounded-full bg-green-600 text-white font-medium hover:bg-green-700 transition">
+        <div className="relative flex justify-center mt-8">
+          <div className="inline-flex rounded-full bg-green-900 p-1 z-10">
+            <button className="px-6 py-3 rounded-full bg-green-600 text-white font-medium hover:bg-green-700 transition">
               Timeline
             </button>
           </div>
+          <div className="absolute mt-3 top-full left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-green-700 rounded-full"></div>
         </div>
 
         <motion.div
