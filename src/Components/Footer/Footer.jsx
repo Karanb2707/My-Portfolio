@@ -30,7 +30,7 @@ const Footer = () => {
                 <CiLinkedin size={20} />
               </span>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/karan-bolake-29503034a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline hover:text-blue-400 transition"
