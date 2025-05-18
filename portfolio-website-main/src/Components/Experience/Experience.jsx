@@ -36,7 +36,7 @@ const Education = () => {
     {
       type: "certification",
       title: "Front End Development",
-      organization: "MCC College",
+      organization: "MCC College (University of Mumbai)",
       duration: "Completed Apr 2024",
       description:
         "Completed hands-on training in frontend technologies like HTML5, CSS3, JavaScript, and React, with a strong focus on building responsive, user-friendly interfaces following industry-standard UI/UX principles.",
@@ -44,7 +44,7 @@ const Education = () => {
     {
       type: "certification",
       title: "Full Stack Development",
-      organization: "MCC College (Mumbai ",
+      organization: "MCC College (University of Mumbai)",
       duration: "Completed Dec 2023",
       description:
         "Completed full stack development training covering both frontend and backend technologies such as HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React, preparing for real-world web application development.",
