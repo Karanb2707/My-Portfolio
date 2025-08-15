@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaRegEye } from "react-icons/fa";
 
-const ProjectCard = ({ title, desc, github, image }) => {
+const ProjectCard = ({ title, desc, github, liveurl, image }) => {
   return (
     <div className="bg-zinc-900 rounded-xl p-4 w-full sm:w-[45%] md:w-[30%] shadow-md hover:shadow-xl hover:shadow-slate-800 
       transition duration-300 flex flex-col justify-between transform hover:scale-105">
@@ -22,6 +22,14 @@ const ProjectCard = ({ title, desc, github, image }) => {
       >
         <FaGithub size={20} /> Github
       </a>
+      <a
+        href={liveurl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 inline-flex items-center justify-center gap-2 bg-[#a30000] hover:bg-[#e12424] text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
+      >
+        <FaRegEye size={20} /> Visit
+      </a>
     </div>
   );
 };
@@ -30,6 +38,7 @@ ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
+  liveurl: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 

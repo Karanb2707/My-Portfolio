@@ -11,12 +11,13 @@ const Education = () => {
   const timelineItems = [
     {
       type: "work",
-      title: "Software Engineer",
+      title: "Frontend Developer",
       organization: "Fyntune Solution Limited, Thurbhe",
       duration: "May 2024 - Present",
       description:
-        "Working as a Software Engineer with a focus on building responsive and scalable UIs in React, supported by Laravel-based APIs. Also handle complex MySQL queries for data management and performance optimization.",
+        "Working as a Frontend Developer specializing in building responsive, scalable, and high-performance UIs using ReactJS and Tailwind CSS. Collaborate closely with API teams for seamless data integration and implement performance optimizations like lazy loading and code splitting.",
     },
+
     {
       type: "education",
       title: "Bachelor of Science in Computer Science",
@@ -139,11 +140,10 @@ const Education = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`mb-12 flex items-center ${
-                  index % 2 === 0
+                className={`mb-12 flex items-center ${index % 2 === 0
                     ? "justify-start md:justify-end"
                     : "justify-start"
-                } relative ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}
+                  } relative ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}
               >
                 <div
                   className={`w-full md:w-[calc(50%-2rem)] bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] 

@@ -1,5 +1,5 @@
 import avatarImg from "../../assets/karan3.png";
-import cvFile from "../../assets/Karan_Bolake_Resume.pdf"; // update the path if needed
+import cvFile from "../../assets/Karan_Resume_2025.pdf";
 
 const Home = () => {
   return (
@@ -13,18 +13,17 @@ const Home = () => {
           Karan Bolake
         </h1>
         <h2 className="text-xl md:text-3xl font-semibold text-[#4c8ef7] mb-4">
-          Software Engineer
+          Frontend Developer
         </h2>
         <p className="text-base md:text-lg text-gray-300 leading-relaxed">
           I specialize in building beautiful and fast frontend interfaces using{" "}
           <span className="text-white font-medium">React</span>. I focus on creating
           reusable components, managing state with hooks and context, and delivering
-          responsive, performant UIs using tools like React Router and lazy loading.
-          On the backend, I work with <span className="text-white font-medium">Laravel</span> to
-          craft scalable APIs. I use <span className="text-white font-medium">MySQL</span> to
-          design efficient databases that ensure data reliability and
-          performance.
+          responsive, performant UIs using tools like React Router, Tailwind CSS, and
+          lazy loading. I prioritize clean, maintainable code and seamless user
+          experiences across devices and browsers.
         </p>
+
         <a
           href={cvFile}
           download="Karan_Bolake_CV.pdf"

@@ -6,31 +6,27 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiLaravel,
-  SiMysql,
   SiPostman,
-  SiPhp,
   SiGithub,
+  SiMicrosoft,
 } from "react-icons/si";
 
 const tools = [
-  { icon: <FaHtml5 color="#E34F26" size={40} />, name: "HTML5", percent: 95 },
-  { icon: <FaCss3 color="#1572B6" size={40} />, name: "CSS3", percent: 90 },
-  { icon: <FaJs color="#F7DF1E" size={40} />, name: "JavaScript", percent: 90 },
-  { icon: <FaReact color="#61DAFB" size={40} />, name: "React", percent: 88 },
-  { icon: <SiTailwindcss color="#38BDF8" size={40} />, name: "Tailwind CSS", percent: 82 },
-  { icon: <SiPhp color="#777BB4" size={40} />, name: "PHP", percent: 83 },
-  { icon: <SiLaravel color="#FF2D20" size={40} />, name: "Laravel", percent: 85 },
-  { icon: <SiMysql color="#00758F" size={40} />, name: "MySQL", percent: 82 },
+  { icon: <FaHtml5 color="#E34F26" size={40} />, name: "HTML5", percent: 82 },
+  { icon: <FaCss3 color="#1572B6" size={40} />, name: "CSS3", percent: 81 },
+  { icon: <FaJs color="#F7DF1E" size={40} />, name: "JavaScript", percent: 78 },
+  { icon: <FaReact color="#61DAFB" size={40} />, name: "React", percent: 78 },
+  { icon: <SiTailwindcss color="#38BDF8" size={40} />, name: "Tailwind CSS", percent: 81 },
   { icon: <SiPostman color="#FF6C37" size={40} />, name: "Postman", percent: 85 },
   { icon: <SiGithub color="#F05032" size={40} />, name: "Git", percent: 87 },
+  { icon: <SiMicrosoft color="#D83B01" size={40} />, name: "MS Office", percent: 85 },
 ];
 
 const Skills = () => {
   return (
     <div id="Skills" className="p-10 text-white">
       <h1 className="text-3xl font-bold text-center mb-10">Skills</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {tools.map((tool, index) => (
           <div
             key={index}

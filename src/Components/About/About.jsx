@@ -20,39 +20,41 @@ const About = () => {
           <h2 className="text-3xl md:text-5xl text-center font-bold mb-6">About Me</h2>
 
           <div className="space-y-6">
+            {/* UI Development */}
             <div className="flex items-start gap-4">
-              <IoArrowForward size={24} className="mt-1 text-yellow-400" />
+              <IoArrowForward size={30} className="mt-1 text-yellow-400" />
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold">Frontend</h3>
+                <h3 className="text-xl md:text-2xl font-semibold">UI Development</h3>
                 <p className="text-sm md:text-base leading-relaxed text-gray-300">
-                  I build responsive and engaging interfaces using React and Tailwind CSS.  
-                  I focus on performance, accessibility, and smooth user experience.  
-                  My React work includes reusable components, state management with hooks and Context API, and performance optimizations like lazy loading.
+                  I build responsive and visually engaging user interfaces using ReactJS and Tailwind CSS.
+                  My approach focuses on performance, accessibility, and cross-device compatibility.
+                  I design pixel-perfect layouts while ensuring smooth animations and an intuitive user experience.
                 </p>
               </div>
             </div>
 
+            {/* API Integration & State Management */}
             <div className="flex items-start gap-4">
-              <IoArrowForward size={24} className="mt-1 text-yellow-400" />
+              <IoArrowForward size={30} className="mt-1 text-yellow-400" />
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold">Backend</h3>
+                <h3 className="text-xl md:text-2xl font-semibold">API Integration & State Management</h3>
                 <p className="text-sm md:text-base leading-relaxed text-gray-300">
-                  I develop robust APIs with Laravel, ensuring scalable and secure solutions.  
-                  My work involves writing clean, maintainable code and designing efficient system architectures.  
-                  I integrate backend services seamlessly with frontend applications.
+                  Experienced in integrating RESTful APIs into frontend applications to deliver real-time and dynamic content.
+                  I manage complex application state using React Hooks and the Context API, ensuring data flows seamlessly.
+                  My work includes implementing lazy loading and code-splitting to boost performance.
                 </p>
               </div>
             </div>
 
-
+            {/* Experience & Optimization */}
             <div className="flex items-start gap-4">
-              <IoArrowForward size={24} className="mt-1 text-yellow-400" />
+              <IoArrowForward size={30} className="mt-1 text-yellow-400" />
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold">Database</h3>
+                <h3 className="text-xl md:text-2xl font-semibold">Experience & Optimization</h3>
                 <p className="text-sm md:text-base leading-relaxed text-gray-300">
-                  Skilled in designing optimized database schemas using MySQL and MongoDB.  
-                  I ensure data consistency, speed, and security in all projects.  
-                  Database performance tuning and query optimization are part of my expertise.
+                  With hands-on experience building 5+ complex frontend modules for large-scale platforms,
+                  I excel at delivering high-performance, scalable interfaces.
+                  I continuously optimize load times, enhance usability, and create maintainable, reusable code structures.
                 </p>
               </div>
             </div>

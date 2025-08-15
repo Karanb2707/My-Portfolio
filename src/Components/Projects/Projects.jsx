@@ -1,30 +1,34 @@
 import ProjectCard from "./ProjectCard";
-import ChatAppImage from "../../assets/chatApp.png";
-import GameShopAppImage from "../../assets/gameShop.png";
-import TourAppImage from "../../assets/tourApp.png";
+import ChatAppImg from "../../assets/chatApp.png";
+import FoodAppImg from "../../assets/food_ordering.png";
+import ToDoListImg from "../../assets/to_do_list.png";
 
 const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-18 mb-10 text-white">
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">Projects</h1>
       <div className="flex flex-wrap justify-center gap-8">
+
+        <ProjectCard
+          title="Food Ordering Application"
+          desc="An online food ordering platform with menu browsing, cart management, order summary, and a fully responsive design for a smooth user experience."
+          github="https://github.com/Karanb2707/masala-move-food-order-app"
+          liveurl=''
+          image={FoodAppImg}
+        />
+        <ProjectCard
+          title="FocusPro (To-Do List Application)"
+          desc="A task management application with features for adding, editing, and organizing tasks, built with a clean, responsive UI for productivity on any device."
+          github="https://github.com/Karanb2707/focuspro-to-do-list-app"
+          liveurl=''
+          image={ToDoListImg}
+        />
         <ProjectCard
           title="Chat Application"
           desc="A real-time messaging app with private/group chats, emoji and media support, built using WebSockets and a modern React interface."
           github="https://github.com/Karanb2707/Chat-App-MERN"
-          image={ChatAppImage}
-        />
-        <ProjectCard
-          title="Game Shop Application"
-          desc="A digital game store featuring product listings, reviews, cart, order tracking, and secure payments. Built for performance and responsiveness."
-          github="https://github.com/yourusername/game-shop"
-          image={GameShopAppImage}
-        />
-        <ProjectCard
-          title="Tour Application"
-          desc="A travel booking platform with detailed tour pages, search and filters, responsive UI, and admin tools for managing packages and bookings."
-          github="https://github.com/yourusername/tour"
-          image={TourAppImage}
+          liveurl='https://chat-app-prod-43po.onrender.com/login'
+          image={ChatAppImg}
         />
       </div>
     </div>
