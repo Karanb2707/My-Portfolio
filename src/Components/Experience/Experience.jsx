@@ -12,7 +12,7 @@ const Education = () => {
     {
       type: "work",
       title: "Frontend Developer",
-      organization: "Fyntune Solution Limited, Thurbhe",
+      organization: "Fyn Tune Solution Limited, Thurbhe",
       duration: "May 2024 - Present",
       description:
         "Working as a Frontend Developer specializing in building responsive, scalable, and high-performance UIs using ReactJS and Tailwind CSS. Collaborate closely with API teams for seamless data integration and implement performance optimizations like lazy loading and code splitting.",
