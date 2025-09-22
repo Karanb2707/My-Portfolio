@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import ChatAppImg from "../../assets/chatApp.png";
+import GameBazzarImg from "../../assets/gameBazzar.png";
 import FoodAppImg from "../../assets/food_ordering.png";
 import ToDoListImg from "../../assets/to_do_list.png";
 
@@ -24,11 +24,11 @@ const Projects = () => {
           image={ToDoListImg}
         />
         <ProjectCard
-          title="Chat Application"
-          desc="A real-time messaging app with private/group chats, emoji and media support, built using WebSockets and a modern React interface."
-          github="https://github.com/Karanb2707/Chat-App-MERN"
-          liveurl='https://chat-app-prod-43po.onrender.com/login'
-          image={ChatAppImg}
+          title="Game Bazzar"
+          desc="Game Bazzar – A modern gaming marketplace built with React and Tailwind CSS, showcasing responsive design, smooth UI, and interactive components."
+          github="https://github.com/Karanb2707/game-bazzar"
+          liveurl='https://karanb2707.github.io/game-bazzar/'
+          image={GameBazzarImg}
         />
       </div>
     </div>

@@ -22,14 +22,20 @@ const ProjectCard = ({ title, desc, github, liveurl, image }) => {
       >
         <FaGithub size={20} /> Github
       </a>
-      <a
-        href={liveurl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center justify-center gap-2 bg-[#a30000] hover:bg-[#e12424] text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
-      >
-        <FaRegEye size={20} /> Visit
-      </a>
+      {
+        liveurl
+          ?
+          <a
+            href={liveurl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center gap-2 bg-[#a30000] hover:bg-[#e12424] text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
+          >
+            <FaRegEye size={20} /> Visit
+          </a>
+          :
+          <p className="mt-4 text-center font-semibold text-gray-200">Coming Soon</p>
+      }
     </div>
   );
 };
