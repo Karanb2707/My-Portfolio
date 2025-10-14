@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import GameBazzarImg from "../../assets/gameBazzar.png";
 import FoodAppImg from "../../assets/food_ordering.png";
 import ToDoListImg from "../../assets/to_do_list.png";
+import ServiceManagerImg from "../../assets/service_manager.png";
 
 const Projects = () => {
   return (
@@ -10,10 +11,10 @@ const Projects = () => {
       <div className="flex flex-wrap justify-center gap-8">
 
         <ProjectCard
-          title="Food Ordering Application"
+          title="Masla Move (Food Order Website)"
           desc="An online food ordering platform with menu browsing, cart management, order summary, and a fully responsive design for a smooth user experience."
           github="https://github.com/Karanb2707/masala-move-food-order-app"
-          liveurl=''
+          liveurl='https://masala-move-food-order.vercel.app/'
           image={FoodAppImg}
         />
         <ProjectCard
@@ -29,6 +30,13 @@ const Projects = () => {
           github="https://github.com/Karanb2707/game-bazzar"
           liveurl='https://karanb2707.github.io/game-bazzar/'
           image={GameBazzarImg}
+        />
+        <ProjectCard
+          title="Service Manager"
+          desc="Service Manager – A smart service management platform built with React and Tailwind CSS, featuring efficient task handling, clean UI, and responsive design."
+          github="https://github.com/Karanb2707/service-manager"
+          liveurl="https://service-manager-psi.vercel.app/"
+          image={ServiceManagerImg}
         />
       </div>
     </div>
