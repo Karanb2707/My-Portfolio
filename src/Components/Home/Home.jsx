@@ -54,7 +54,7 @@ const Home = () => {
           </a>
 
           <a
-            href="#contact"
+            href="#Footer"
             className="inline-flex items-center gap-2 border-2 border-blue-400/50 text-blue-400 font-semibold px-8 py-4 rounded-full hover:bg-blue-400/10 hover:border-blue-400 transition-all duration-300 hover:scale-105"
           >
             Get in Touch
