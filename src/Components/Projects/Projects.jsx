@@ -46,7 +46,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent"
+        className="text-4xl md:text-5xl font-extrabold text-center mb-8 p-2 bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent"
       >
         Projects
       </motion.h1>

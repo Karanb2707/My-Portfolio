@@ -64,13 +64,6 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="flex flex-wrap gap-3 mt-10">
-          {['React', 'JavaScript', 'Tailwind CSS', 'React Router'].map((tech) => (
-            <span key={tech} className="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm text-gray-300 backdrop-blur-sm hover:border-blue-500/50 hover:text-blue-400 transition-all duration-300">
-              {tech}
-            </span>
-          ))}
-        </div>
       </div>
 
       <div className={`md:w-1/2 flex justify-center z-10 transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'}`}>
@@ -85,7 +78,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-green-400 to-emerald-500 text-white px-6 py-3 rounded-full shadow-xl font-semibold flex items-center gap-2">
+          <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-full shadow-xl font-semibold flex items-center gap-2">
             <span className="w-3 h-3 bg-white rounded-full"></span>
             Available for Work
           </div>
