@@ -1,16 +1,16 @@
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiPostman, SiGithub, SiMicrosoft } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiRedux, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const tools = [
   { icon: <FaHtml5 color="#E34F26" size={44} />, name: "HTML5", percent: 90 },
-  { icon: <FaCss3 color="#1572B6" size={44} />, name: "CSS3", percent: 88 },
+  { icon: <FaCss3 color="#ff00dd" size={44} />, name: "CSS3", percent: 88 },
   { icon: <FaJs color="#F7DF1E" size={44} />, name: "JavaScript", percent: 85 },
   { icon: <FaReact color="#61DAFB" size={44} />, name: "React", percent: 84 },
   { icon: <SiTailwindcss color="#38BDF8" size={44} />, name: "Tailwind CSS", percent: 87 },
-  { icon: <SiPostman color="#FF6C37" size={44} />, name: "Postman", percent: 86 },
-  { icon: <SiGithub color="#F05032" size={44} />, name: "Git", percent: 89 },
-  { icon: <SiMicrosoft color="#D83B01" size={44} />, name: "MS Office", percent: 83 },
+  { icon: <SiTypescript color="#487df7" size={44} />, name: "TypeScript", percent: 86 },
+  { icon: <SiGithub color="#ba00b1" size={44} />, name: "Git", percent: 89 },
+  { icon: <SiRedux color="#da69fc" size={44} />, name: "Redux", percent: 83 },
 ];
 
 const Skills = () => {

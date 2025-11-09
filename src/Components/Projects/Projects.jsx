@@ -18,7 +18,7 @@ const Projects = () => {
       title: "FocusPro (To-Do List Application)",
       desc: "A productivity app with task management, editing, and organizing features built on React with a responsive UI.",
       github: "https://github.com/Karanb2707/focuspro-to-do-list-app",
-      liveurl: "",
+      liveurl: "https://focuspro-to-do-list.vercel.app/",
       image: ToDoListImg,
     },
     {
